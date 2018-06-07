@@ -4,4 +4,4 @@ PRODUCT="jre" \
 JAVA_HOME="/usr/lib/java"
 
 COPY prepare.sh /usr/local/bin
-RUN prepare.sh
+RUN chmod +x /usr/local/bin/prepare.sh && prepare.sh
